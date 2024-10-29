@@ -5,14 +5,17 @@ export default function Color(){
  const [updateColor , setUpdateColor] = useState("#000000");
 
  function hexColor(){
-
-    var col = Math.floor(Math.random() * 1000000).toString().padStart(6, '0');
-
-    setUpdateColor(`#${col}`);
-    console.log(updateColor)
-
+const arr = [1,2,3,4,5,6,7,8,9,'A','B','C','D','E','F'];
+    // var col = Math.floor(Math.random() * 1000000).toString().padStart(6, '0');
+let hash = "#";
     
 
+    for(var i =0;i<6;i++){
+      hash+= arr[Math.floor(Math.random()*arr.length)];
+    }
+
+    setUpdateColor(hash);
+    
 
  }
  function rgbColor(){
