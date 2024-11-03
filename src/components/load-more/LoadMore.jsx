@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import './styles.css';
 
 export default function ({ url }) {
   const [images, setImages] = useState([]);
@@ -35,21 +36,21 @@ export default function ({ url }) {
   }, [url ,limit]);
 
   return (
-    <div>
+    <div className="load-more-container">
       {loading ? (
         <div>Loading..</div>
       ) :( images.length > 0 ? (
+        <div className="product-container">
+          {
        images.map((i ,ind) => (
-          <div
+          <div className="product"
             key={ind}
-            style={{
-              height: "500px",
-              width: "600px",
-            }}
+           
           >
             <img src={i.thumbnail} alt={i.title} />
           </div>
-        ))
+        ))}
+        </div>
       ) : (
         <div> No images to show here</div>
       )
