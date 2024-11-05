@@ -1,6 +1,4 @@
-
 import MenuList from "./MenuList";
-
 
 export default function Index({ menus = [] }) {
   return (

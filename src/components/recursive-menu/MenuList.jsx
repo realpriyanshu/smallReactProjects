@@ -1,4 +1,5 @@
 import MenuItem from "./MenuItem";
+import "./Menu.css";
 
 export default function MenuList({ list = [] }) {
   return (
