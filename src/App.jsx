@@ -24,8 +24,8 @@ function App() {
       {/* <Index menus={menus} /> */}
 
 {/*     QR-CODE Generator */}
-<QrCodeGenerator />
-    </>
+<QrCodeGenerator  />
+    </> 
   );
 }
 
