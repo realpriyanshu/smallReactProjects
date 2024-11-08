@@ -1,14 +1,20 @@
+import UseLocalStorage from "./UseLocalStorage"
+import '../ThemeChanger/style.css'
+
 export default function ThemeChanger(){
+
+    const [theme ,setTheme] = UseLocalStorage("theme","dark");
+
+    function toggleTheme(){
+        setTheme(theme==="light"? "dark":"light")
+
+        console.log(theme)
+    }
     return(
-        <div  style={{
-            display:"flex",
-            alignItems:"center",
-            justifyContent:"center",
-            marginTop:"300px"
-        }} className="light-dark-themeChanger">
+        <div  className="light-dark-themeChanger">
             <div className="container">
                 <p>HOLA AMIGO</p>
-                <button>Change Theme</button>
+                <button onClick={()=>toggleTheme()}>Change Theme</button>
             </div>
         </div>
     )
