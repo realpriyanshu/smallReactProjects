@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Color from "./components/colorGenerator/Color.jsx";
 import ImageSlider from "./components/image-slider/ImageSlider.jsx";
-import "./App.css";
+
 import LoadMore from "./components/load-more/LoadMore.jsx";
 import Index from "./components/recursive-menu/index.jsx";
 import menus from "./components/recursive-menu/data.jsx";

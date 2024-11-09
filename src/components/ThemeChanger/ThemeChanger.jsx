@@ -11,7 +11,7 @@ export default function ThemeChanger(){
         console.log(theme)
     }
     return(
-        <div  className="light-dark-themeChanger">
+        <div  className="light-dark-mode"  flag = {theme}>
             <div className="container">
                 <p>HOLA AMIGO</p>
                 <button onClick={()=>toggleTheme()}>Change Theme</button>
@@ -19,3 +19,17 @@ export default function ThemeChanger(){
         </div>
     )
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
