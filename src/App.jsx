@@ -18,6 +18,8 @@ function App() {
       {/* <Color /> */}
 
       {/* <ImageSlider  url={"https://picsum.photos/v2/list"}
+
+      
         page={"1"}
         limit={"5"} /> */}
 
@@ -29,10 +31,11 @@ function App() {
 {/*     QR-CODE Generator */}
 {/* <QrCodeGenerator  /> */}
 
+
 {/* <ThemeChanger /> */}
 
 
-<ScrollTracker getUrl={"https://dummyjson.com/products?limit=50"} />
+<ScrollTracker getUrl={"https://dummyjson.com/products?limit=100"} />
     </> 
   );
 }

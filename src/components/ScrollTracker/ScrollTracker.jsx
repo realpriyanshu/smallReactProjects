@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react"
+import "../ScrollTracker/style.css"
 
 
 export default function ScrollTracker({ getUrl }) {
 
     const [data, setData] = useState([]);
-    const [loading, setLoading] = useState(false);
+    const [loading, setLoading] = useState(true);
+
     const [ScrollPercentage, setScrollPercentage] = useState()
 
 
@@ -19,6 +21,7 @@ export default function ScrollTracker({ getUrl }) {
             if (D && D.products && D.products.length > 0) {
                 setData(D.products)
                 console.log(D.products)
+                setLoading(false);
             }
 
 
@@ -56,15 +59,39 @@ export default function ScrollTracker({ getUrl }) {
     console.log(ScrollPercentage)
 
     return (
-        <div>
-            <h1>Scroll Indicator</h1>
-            <div className="data-container">
-                {data && data.length > 0
-                    ? data.map((dataItem, index) => (
-                        <p key={index}>{dataItem.title}</p>
-                    ))
-                    : <p>No data available.</p>}
-            </div>
+        <div >
+            {loading ? <div style={{
+                height: "100vh",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+            }}>loading..</div>
+
+                :
+                <>
+                <div className="top-container">
+                <h1>Scroll Indicator</h1>
+                    <div className="scroll-progress-container">
+                        <div className="scroll-progress" style={{ width: `${ScrollPercentage}%` }}
+                        >
+
+                        </div>
+
+                    </div>
+
+                </div>
+                    
+                    <div className="data-container">
+                        {data && data.length > 0
+                            ? data.map((dataItem, index) => (
+                                <p key={index}>{dataItem.title}</p>
+                            ))
+                            : <p>No data available.</p>}
+                    </div>
+                </>
+
+            }
+
 
         </div>
     )
