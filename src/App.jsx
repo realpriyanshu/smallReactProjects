@@ -8,6 +8,7 @@ import menus from "./components/recursive-menu/data.jsx";
 import QrCodeGenerator from "./components/QrCodeGenerator/index.jsx";
 import ThemeChanger from "./components/ThemeChanger/ThemeChanger.jsx";
 import ScrollTracker from "./components/ScrollTracker/ScrollTracker.jsx";
+import TestTab from "./components/custom-tabs/TestTab.jsx";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -34,8 +35,10 @@ function App() {
 
 {/* <ThemeChanger /> */}
 
+{/* Scrolltacker */}
+{/* <ScrollTracker getUrl={"https://dummyjson.com/products?limit=100"} /> */}
 
-<ScrollTracker getUrl={"https://dummyjson.com/products?limit=100"} />
+<TestTab />
     </> 
   );
 }

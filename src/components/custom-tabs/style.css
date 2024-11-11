@@ -1,0 +1,20 @@
+.heading{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.heading span{
+    padding: 10px;
+    margin-left: 20px;
+    background-color: aqua;
+    border-radius: 20px;
+}
+
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    
+}
