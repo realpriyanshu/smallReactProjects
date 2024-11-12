@@ -9,6 +9,7 @@ import QrCodeGenerator from "./components/QrCodeGenerator/index.jsx";
 import ThemeChanger from "./components/ThemeChanger/ThemeChanger.jsx";
 import ScrollTracker from "./components/ScrollTracker/ScrollTracker.jsx";
 import TestTab from "./components/custom-tabs/TestTab.jsx";
+import ModelTest from "./components/Model-pop/ModelTest.jsx";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -38,7 +39,10 @@ function App() {
 {/* Scrolltacker */}
 {/* <ScrollTracker getUrl={"https://dummyjson.com/products?limit=100"} /> */}
 
-<TestTab />
+{/* <TestTab /> */}
+
+
+<ModelTest />
     </> 
   );
 }
