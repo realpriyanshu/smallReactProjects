@@ -13,7 +13,7 @@ export default function ModelTest(){
 
     return <div >
 <button onClick={()=>(handleToggle())}>ok</button> 
-{showModelPopUp && <Model />}
+{showModelPopUp && <Model id={1} footer={"footer hai bbhai"} header={"header hai bhai"} body={"this is my body which i have made by hitting the gym every day"} />}
 
     </div>
 }
