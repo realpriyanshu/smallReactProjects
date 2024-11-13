@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Model from "./Model";
-import { FaLeaf } from "react-icons/fa";
+
 
 export default function ModelTest(){
 
@@ -12,8 +12,8 @@ export default function ModelTest(){
     }
 
     return <div >
-<button onClick={()=>(handleToggle())}>ok</button> 
-{showModelPopUp && <Model id={1} footer={"footer hai bbhai"} header={"header hai bhai"} body={"this is my body which i have made by hitting the gym every day"} />}
+<button onClick={()=>(handleToggle())}>Click</button> 
+{showModelPopUp && <Model id={1} footer={"footer hai bhai "} header={" header hai bhai "} body={" this is my body which i have made by hitting the gym every day"} />}
 
     </div>
 }
