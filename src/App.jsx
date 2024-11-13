@@ -10,6 +10,7 @@ import ThemeChanger from "./components/ThemeChanger/ThemeChanger.jsx";
 import ScrollTracker from "./components/ScrollTracker/ScrollTracker.jsx";
 import TestTab from "./components/custom-tabs/TestTab.jsx";
 import ModelTest from "./components/Model-pop/ModelTest.jsx";
+import GithubProfileFinder from "./components/Github-profile-finder/githubProfileFinder.jsx";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -42,7 +43,9 @@ function App() {
 {/* <TestTab /> */}
 
 
-<ModelTest />
+{/* <ModelTest /> */}
+
+<GithubProfileFinder />
     </> 
   );
 }
