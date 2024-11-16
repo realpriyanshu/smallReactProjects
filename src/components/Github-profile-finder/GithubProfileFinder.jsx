@@ -40,6 +40,7 @@ export default function GithubProfileFinder({url}){
                 <button onClick={()=>(handleSubmit())}>Search</button>
             </div>
          <div className="userData">
+            {console.log(userData)}
             {userData!==null?<User  user = {userData} />:null}
          </div>
         </div>

@@ -1,7 +1,4 @@
 .user{
-    margin-top: 200px;
-    height: 30vh;
-    width: 40vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -10,8 +7,8 @@
 }
 .userData{
     border: 2px solid black;
-    height: 70vh;
-    }
+    padding: 10px;
+}
 .avtar img{
     border-radius:50% ;
 }
@@ -36,4 +33,14 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+.name-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pfp{
+    height: 300px;
 }

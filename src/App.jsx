@@ -11,6 +11,7 @@ import ScrollTracker from "./components/ScrollTracker/ScrollTracker.jsx";
 import TestTab from "./components/custom-tabs/TestTab.jsx";
 import ModelTest from "./components/Model-pop/ModelTest.jsx";
 import GithubProfileFinder from "./components/Github-profile-finder/githubProfileFinder.jsx";
+import SearchAutoComplete from "./components/search-auto-complete/Index.jsx";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -40,12 +41,15 @@ function App() {
 {/* Scrolltacker */}
 {/* <ScrollTracker getUrl={"https://dummyjson.com/products?limit=100"} /> */}
 
+{/*  */}
 {/* <TestTab /> */}
 
 
-{/* <ModelTest /> */}
 
-<GithubProfileFinder />
+ 
+{/* <GithubProfileFinder /> */}
+
+<SearchAutoComplete />
     </> 
   );
 }

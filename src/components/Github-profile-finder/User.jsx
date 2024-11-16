@@ -18,11 +18,11 @@ export default function User({user}){
     return(
         <div className="user">
             <div className="avtar">
-                <img src={avatar_url}/>
+                <img className="pfp" src={avatar_url}/>
             </div>
             <div className="name-container">
                 <a href={`https://github.com/${login}`}>{name || login}</a>
-                <p>{`user joined on ${createdDate.getDate()}`}</p>
+                <p>{`joined on: ${createdDate.toDateString()}`}</p>
             </div>
 
             <div className="profile-info">
